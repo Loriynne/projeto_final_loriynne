@@ -1,0 +1,18 @@
+body {
+  font-family: Helvetica;
+}
+.fundo {
+  background-color: rgb(93, 172, 172);
+}
+
+.autora {
+  width: 300px;
+}
+.imagem-livro {
+  width: 300px;
+}
+
+header {
+  font-size: 20px;
+  font-weight: bold;
+}

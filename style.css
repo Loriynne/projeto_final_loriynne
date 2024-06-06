@@ -1,0 +1,29 @@
+body {
+  background-image: url(Imagens/Backgroud\ image\ index\ principal.jpg);
+  background-size: cover;
+}
+
+h1 {
+  font-family: Helvetica;
+  font-size: 140px;
+  text-align: center;
+  color: white;
+  border: black;
+}
+
+ul {
+  list-style-type: none;
+}
+
+button {
+  font-family: helvetica;
+  font-size: 32px;
+  background-color: white;
+  border-radius: 15px;
+  padding: 7px;
+  margin: 20px;
+}
+
+nav {
+  text-align: center;
+}
