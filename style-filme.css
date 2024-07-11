@@ -1,15 +1,236 @@
-body {
-  font-family: Helvetica;
+@font-face {
+  font-family: Friz;
+  src: url(Fonts/friz-quadrata-regular.ttf);
 }
-.fundo {
-  background-color: rgb(93, 172, 172);
+
+body {
+  font-family: "Inter";
+  margin: 0px;
+  scrollbar-width: thin;
+}
+
+main {
+  scroll-snap-stop: always (y mandatory);
+  scroll-snap-align: start;
+}
+
+h1 {
+  display: none;
+}
+
+h2 {
+  margin-bottom: 30px;
+}
+
+nav {
+  top: 0;
+  position: fixed;
+  margin: 15px 0px;
+}
+
+nav,
+li {
+  list-style: none;
+}
+
+ul {
+  margin: 0px;
 }
 
 header {
+  display: flex;
+  position: relative;
   font-size: 20px;
-  font-weight: bold;
+  justify-content: center;
 }
 
-.diretor {
-  width: 300px;
+.div-title-1 {
+  color: #58240f;
+  font-size: 15px;
+  font-weight: 400;
+  margin: 0px;
+}
+
+.div-title-2 {
+  color: #58240f;
+  font-family: Friz;
+  font-size: 63px;
+  letter-spacing: 10px;
+  margin: 0px;
+  width: 450px;
+}
+
+.div-title-3 {
+  color: #272d22;
+  font-family: Friz;
+  font-size: 63px;
+  letter-spacing: 17px;
+  margin: 0px;
+  width: 450px;
+}
+
+.div-title-4 {
+  color: black;
+  font-family: Friz;
+  font-size: 63px;
+  letter-spacing: 10px;
+  margin: 0px;
+}
+
+.avaliacoes {
+  display: flex;
+  padding: 0px;
+}
+
+.av-logos {
+  height: 90px;
+  margin: 0px 20px;
+}
+.menu {
+  display: flex;
+  justify-content: center;
+}
+
+.menu__link {
+  top: 0;
+  margin: 0px 20px;
+  color: black;
+  list-style: none;
+  text-decoration: none;
+}
+
+.menu__link:hover {
+  color: white;
+  font-weight: bolder;
+}
+
+#sinopse {
+  display: grid;
+  grid-template-areas:
+    "sinopse img"
+    "avaliacoes img";
+  background-color: #ebd2af;
+  height: 100%;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  padding-top: 70px;
+  padding-bottom: 50px;
+  margin: 0px;
+}
+
+.sinopse__content {
+  grid-area: sinopse;
+  width: 430px;
+  margin: 0px 130px;
+  text-align: justify;
+}
+
+.sinopse__img {
+  grid-area: img;
+  height: 800px;
+  width: 700px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 50px 50px 50px 50px;
+  align-self: right;
+}
+
+.avaliacoes__content {
+  grid-area: avaliacoes;
+  width: 430px;
+  margin: 0px 130px;
+}
+
+.avaliacoes {
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+.diretor__img {
+  grid-area: dir_img;
+  height: 800px;
+  width: 700px;
+  object-fit: cover;
+  object-position: top;
+  border-radius: 50px 50px 50px 50px;
+  align-self: right;
+}
+
+.diretor__content {
+  grid-area: dir_content;
+  width: 430px;
+  margin: 0px 130px;
+  text-align: justify;
+}
+
+#diretor {
+  display: grid;
+  grid-template-areas: "dir_img dir_content";
+  background-color: #eddada;
+  height: 100%;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  padding-top: 70px;
+  padding-bottom: 50px;
+  margin: 0px;
+}
+
+#studio-ghibli {
+  display: grid;
+  grid-template-areas:
+    "ghibli_content ghibli_img"
+    "dublagem ghibli_img";
+  background-color: #dceefc;
+  height: 100%;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  padding-top: 70px;
+  padding-bottom: 50px;
+  margin: 0px;
+}
+
+.ghibli__content {
+  grid-area: ghibli_content;
+  width: 430px;
+  margin: 0px 130px;
+  text-align: justify;
+}
+
+.ghibli__img {
+  grid-area: ghibli_img;
+  height: 800px;
+  width: 700px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 50px 50px 50px 50px;
+  align-self: right;
+}
+
+.dublagem {
+  grid-area: dublagem;
+  width: 430px;
+  margin: 0px 130px;
+  text-align: justify;
+}
+
+#onde-assistir {
+  background-color: #e3fbcf;
+  height: 100%;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  padding-top: 70px;
+  padding-bottom: 50px;
+  margin: 0px;
+}
+
+footer {
+  background-color: #e3fbcf;
+  text-align: center;
+  vertical-align: bottom;
+  padding-top: 40px;
+  padding-bottom: 10px;
 }
