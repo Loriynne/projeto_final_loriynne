@@ -31,6 +31,7 @@ nav {
 nav,
 li {
   list-style: none;
+  font-size: 23px;
 }
 
 ul {
@@ -44,9 +45,13 @@ header {
   justify-content: center;
 }
 
+p {
+  font-size: 18px;
+}
+
 .div-title-1 {
   color: #58240f;
-  font-size: 15px;
+  font-size: 19px;
   font-weight: 400;
   margin: 0px;
 }
@@ -61,7 +66,7 @@ header {
 }
 
 .div-title-3 {
-  color: #272d22;
+  color: #58240f;
   font-family: Friz;
   font-size: 63px;
   letter-spacing: 17px;
@@ -70,7 +75,7 @@ header {
 }
 
 .div-title-4 {
-  color: black;
+  color: #272d22;
   font-family: Friz;
   font-size: 63px;
   letter-spacing: 10px;
@@ -104,6 +109,19 @@ header {
   font-weight: bolder;
 }
 
+.inter01 {
+  height: 70px;
+  background: linear-gradient(180deg, #ebd2af 0%, #eddada 100%);
+}
+.inter02 {
+  height: 70px;
+  background: linear-gradient(180deg, #eddada 0%, #dceefc 100%);
+}
+.inter03 {
+  height: 70px;
+  background: linear-gradient(180deg, #dceefc 0%, #e3fbcf 100%);
+}
+
 #sinopse {
   display: grid;
   grid-template-areas:
@@ -132,7 +150,7 @@ header {
   width: 700px;
   object-fit: cover;
   object-position: center;
-  border-radius: 50px 50px 50px 50px;
+  border-radius: 50px;
   align-self: right;
 }
 
@@ -153,7 +171,7 @@ header {
   width: 700px;
   object-fit: cover;
   object-position: top;
-  border-radius: 50px 50px 50px 50px;
+  border-radius: 50px;
   align-self: right;
 }
 
@@ -205,7 +223,7 @@ header {
   width: 700px;
   object-fit: cover;
   object-position: center;
-  border-radius: 50px 50px 50px 50px;
+  border-radius: 50px;
   align-self: right;
 }
 
@@ -217,6 +235,7 @@ header {
 }
 
 #onde-assistir {
+  display: grid;
   background-color: #e3fbcf;
   height: 100%;
   width: 100%;
@@ -225,6 +244,25 @@ header {
   padding-top: 70px;
   padding-bottom: 50px;
   margin: 0px;
+}
+
+.assistir__content {
+  text-align: center;
+}
+
+.assistir__img {
+  margin: 30px;
+  height: 300px;
+}
+
+.trailer {
+  height: 400px;
+  width: 700px;
+  margin: 50px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 50px;
+  justify-self: center;
 }
 
 footer {
