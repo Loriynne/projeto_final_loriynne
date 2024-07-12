@@ -49,6 +49,10 @@ p {
   font-size: 18px;
 }
 
+a {
+  text-decoration: none;
+}
+
 .div-title-1 {
   color: #58240f;
   font-size: 19px;
