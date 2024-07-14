@@ -125,11 +125,17 @@ h2 {
 }
 
 .filme-img {
-  height: 500px;
+  height: 520px;
+}
+
+.filme-title-img {
+  margin-top: 10px;
+  width: 550px;
+  filter: drop-shadow(0 0 1mm #428abd);
 }
 
 .filme-img:hover {
-  filter: drop-shadow(0 0 5mm #3c7caad3);
+  filter: drop-shadow(0 0 5mm #3c7caa);
   height: 700px;
   transition: 1s;
 }
